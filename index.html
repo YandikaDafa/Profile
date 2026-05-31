@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dafa.dev | Professional Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav>
+        <div class="logo">
+        <a href="#about">
+            <img src="logo_yd.png" alt="Dafa.dev Logo" class="logo-img">
+        </a>
+    </div>
+        <div class="menu">
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
+
+    <header id="about">
+        <div class="hero-text">
+            <h1>I Putu Yandika Dafa Pratama</h1>
+            <p class="role">Full-stack Web Developer & UI/UX Enthusiast</p>
+            <p class="bio">Tech-driven and detail-oriented IT graduate with hands-on experience in full-stack web development, user interface
+design, and commercial operations. Proficient in Laravel, PHP, and MySQL combined with strong UI/UX design
+capabilities using Figma. Passionate about bridging the gap between robust system logic and seamless digital
+experiences to drive impactful business solutions.</p>
+        </div>
+        <div class="hero-image">
+            <img src="foto-profil.jpg" alt="I Putu Yandika Dafa Pratama">
+        </div>
+    </header>
+
+    <section id="experience">
+        <h2>Professional Experience</h2>
+        <div class="card">
+            <h3>Commercial Intern | Djoin.id</h3>
+            <p><small>Aug 2022 - Mar 2026 | Oct 2024 - Jan 2025</small></p>
+            <ul>
+                <li>Mengelola kampanye pemasaran digital untuk meningkatkan keterlibatan komersial pengguna.</li>
+                <li>Memproduksi konten media sosial perusahaan untuk meningkatkan visibilitas brand.</li>
+            </ul>
+        </div>
+        <div class="card">
+            <h3>UI/UX & Graphic Designer | Freelance</h3>
+            <p><small>Des 2025 - Feb 2026</small></p>
+            <ul>
+                <li>Merancang katalog produk digital yang menarik untuk UMKM lokal.</li>
+                <li>Menggunakan Figma dan Canva untuk membuat aset pemasaran dengan prinsip desain yang kuat.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="skills">
+        <h2>Skills & Tools</h2>
+        <div class="skill-container">
+            <div class="skill-card">
+                <h3>Languages & Frameworks</h3>
+                <p>PHP, JavaScript, HTML5, CSS3, Laravel framework.</p>
+            </div>
+            <div class="skill-card">
+                <h3>Data & Design Tools</h3>
+                <p>MySQL, Figma, Canva, Microsoft Office.</p>
+            </div>
+            <div class="skill-card">
+                <h3>Soft Skills</h3>
+                <p>Problem Solving, Teamwork, High Attention to Detail, Effective Communication.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="certifications">
+        <h2 class="section-title">Certifications</h2>
+        <div class="content-box">
+            <ul class="cert-list">
+                <li onclick="openModal('sertif1.jpg')">Web Development - Dibimbing.id</li>
+                <li onclick="openModal('sertif2.jpg')">Android Development Associate - Logical Operations</li>
+                <li onclick="openModal('sertif3.jpg')">IT Specialist: Python Certification - MyEduSolve</li>
+                <li onclick="openModal('sertif4.jpg')">Digital Marketing Specialist - Logical Operations</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Modal Pop-up -->
+    <div id="certModal" class="modal" onclick="closeModal()">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="certImg">
+    </div>
+
+    <section id="projects">
+        <h2>Featured Projects</h2>
+        <div class="project-grid">
+            <div class="card">
+                <h3>Tour Guide Service System</h3>
+                <p>Web-based tour service system using Laravel & MySQL.</p>
+                <div class="tags"><span>Laravel</span> <span>MySQL</span> <span>Figma</span></div>
+                <a href="#" class="btn">Learn More</a>
+            </div>
+            <div class="card">
+                <h3>MSME Product Catalog</h3>
+                <p>Modern, conversion-focused digital product catalogs.</p>
+                <div class="tags"><span>Figma</span> <span>UI/UX</span></div>
+                <a href="#" class="btn">View Design</a>
+            </div>
+            <div class="card">
+                <h3>Digital Greeting Card</h3>
+                <p>Interactive web application hosted on GitHub Pages.</p>
+                <div class="tags"><span>HTML5</span> <span>JS</span> <span>CSS3</span></div>
+                <a href="#" class="btn">Live Demo</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Mari terhubung! Jika Anda ingin berdiskusi lebih lanjut tentang pengembangan web atau desain UI/UX, jangan ragu untuk menghubungi saya melalui:</p>
+        <div class="contact-info">
+            <p>📧 Email: yandikadafa5@gmail.com</p>
+            <p>🔗 <a href="https://www.linkedin.com/in/yandikadafa/" target="_blank">LinkedIn Profile</a></p>
+            <p>📞 WhatsApp: (+62) 85829093006</p>
+        </div>
+    </section>
+
+    <script>
+    function openModal(imgSrc) {
+        document.getElementById("certModal").style.display = "block";
+        document.getElementById("certImg").src = imgSrc;
+    }
+    function closeModal() {
+        document.getElementById("certModal").style.display = "none";
+    }
+</script>
+</body>
+</html>
